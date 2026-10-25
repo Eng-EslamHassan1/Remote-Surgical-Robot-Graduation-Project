@@ -8,49 +8,35 @@ The system enables remote control of a robotic mechanism using stepper motors, d
 
 ## 🧠 Key Features
 
-- Real-time control of stepper motors for surgical-grade movement
+- Real-time control of stepper motors
 - Remote manipulation capabilities
-- Scalable design for multi-axis robotic arms
-- Low-latency response suitable for medical use cases
+- Multi-axis robotic arm control
+- Embedded motor-control programming
 
 ## 🛠️ Hardware Used
 
 - **STM32H750VBT6** development board (ARM Cortex-M7)
-- **NEMA 17** and **NEMA 23** stepper motors
+- **NEMA stepper motors**
 - **TB6600** stepper motor drivers
-- Potentiometer for manual input (for calibration and control testing)
+- Potentiometer for manual input and control testing
 
 ## 💻 Software & Tools
 
-- **STM32CubeIDE** for embedded development (HAL-based)
-- **STM32 HAL Drivers** for peripheral management (ADC, TIM, GPIO)
-- C programming for real-time embedded control
+- **STM32CubeIDE**
+- **STM32 HAL Drivers**
+- C programming for embedded systems
 
 ## 📁 Project Structure
-- └── 📁 Project_Root
-- ├── 📁 Core
-- │ ├── 📁 Src # Main source files
-- │ │ ├── motor_control.c
-- │ │ ├── adc_reading.c
-- │ │ └── main.c
-- │ └── 📁 Inc # Header files
-- │ ├── motor_control.h
-- │ ├── adc_reading.h
-- │ └── main.h
-- ├── 📁 Drivers # STM32 HAL drivers
-- │ ├── 📁 CMSIS
-- │ └── 📁 STM32H7xx_HAL_Driver
-- └── 📄 README.md # Project documentation
+
+The firmware source code and STM32CubeIDE project files are available in the `graduation_project` directory.
 
 ## 🚀 Getting Started
 
-1. Clone the repository and open the project in **STM32CubeIDE**.
-2. Connect the stepper motors and drivers according to your pin configuration.
-3. Build and flash the firmware to the **STM32H750VBT6** board.
-4. Use a potentiometer or serial input to control motor movement.
+1. Clone this repository.
+2. Open the STM32 project in **STM32CubeIDE**.
+3. Check the hardware connections and pin configuration before powering the motors.
+4. Build and flash the firmware to the target board.
 
 ## ⚠️ Disclaimer
 
-This is an academic project and is **not intended for real medical use**.  
-Further research, validation, and medical certifications are required before any practical or clinical application.
-
+This is an academic project and is **not intended for real medical use**. Further research, validation, and medical certifications are required before any practical or clinical application.
